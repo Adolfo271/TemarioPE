@@ -27,8 +27,8 @@
             
         </li>
         <li>
-            <h2>Temario</h2>
-            <p>1.- Estadística descriptiva.</p>
+            <h1>Temario</h1>
+            <h3>1.- Estadística descriptiva.</h3>
             <p>1.1 Conceptos básicos de estadística: 
                 Para utilizar los datos de forma eficaz, es importante comprender los conceptos estadísticos. Estos conceptos incluyen comprender la variación de la población y la muestra, comprender diferentes variables (media y magnitud), comprender medidas de media y dispersión y usar gráficos estadísticos para comprender la representación de datos. También incluye una comprensión de la importancia de la probabilidad en la toma de decisiones y la estadística para tomar decisiones sobre una población basada en una muestra. En definitiva, estos principios son la base para el análisis e interpretación de datos en el campo de la estadística. 444 444 </p>
             <p>1.2 Descripción de datos: El análisis de datos implica examinar y resumir los aspectos más importantes de los datos, como la distribución y la significación estadística, para comprender su estructura y cualidades antes de realizar análisis más avanzados. 
@@ -41,7 +41,69 @@
             <p>1.6 Técnicas de agrupación de datos: Las técnicas de agrupación de datos son métodos utilizados en estadística y aprendizaje automático para clasificar un conjunto de datos en grupos o clústeres con características similares. Estas técnicas son útiles para encontrar patrones ocultos en los datos y para hacer análisis exploratorio de los mismos.</p>
             <p>1.7 Técnicas de muestreo: Las técnicas de muestreo son métodos utilizados para seleccionar una muestra representativa de una población más grande con el fin de realizar inferencias sobre la población completa. Estas técnicas son esenciales en estadística y en diversos campos de investigación para evitar sesgos y garantizar la validez de los resultados.
             </p>
-            </li>
+            <h3>
+                2.-Fundamentos de la Teoría de Probabilidad.
+            </h3>
+            <p>
+                2.1 Técnicas de Conteo: Las técnicas de conteo son una serie de métodos de probabilidad para contar el número posible de arreglos dentro de un conjunto o varios conjuntos de objetos. Estas se usan cuando realizar las cuentas de forma manual se convierte en algo complicado debido a la gran cantidad de objetos y/o variables.
+            </p> 
+
+
+
+            <h3>
+                3.-Variables Aleatorias.
+            </h3>
+            <P>
+                3.1 Variables aleatorias discretas: Una variable aleatoria es una funci ́on que asigna un nu ́mero a cada suceso elemental de un
+                experimento aleatorio. Una Variable discreta solo puede tomar valores num ́ericos aislados (fijados dos con- secutivos, no puede existir ninguno intermedio).
+            </P>
+            <p>
+                3.1.1 Distribución de probabilidad en forma
+                general: Una distribución de probabilidad asigna a cada evento posible de un espacio muestral un número entre 0 y 1, que representa la probabilidad de que ese evento ocurra. La suma de todas las probabilidades de los eventos posibles es igual a 1.
+            </p>    
+            <p>
+                3.1.2 Valor esperado: Es una medida de centralidad en una distribución de probabilidad que representa el promedio ponderado de los posibles valores de una variable aleatoria. Se denota generalmente como E[X] o μ.
+            </p>    
+            <p>
+                3.1.3 Variancia: La varianza es una medida estadística que indica la dispersión de los valores de una variable aleatoria respecto a su valor esperado o media. Es una medida cuantitativa de la variabilidad o dispersión de los datos en una distribución de probabilidad.
+            </p>
+            <p>
+                Desviación estándar: La desviación estándar es otra medida estadística de dispersión que se utiliza comúnmente junto con la varianza para describir la variabilidad de una variable aleatoria.
+            </p>
+            <p>
+                3.1.4 Función acumulada: es una función importante en la teoría de probabilidad que describe la probabilidad acumulada de que una variable aleatoria X sea menor o igual a un cierto valor x.
+            </p>
+            <p>
+                3.2 Variables aleatorias Continuas: Se dice que una variable aleatoria X es continua si su conjunto de posibles valores es todo un intervalo (finito o infinito) de números reales.
+            </p>
+            <p>
+                3.2.1 Distribución de probabilidad en forma general:
+                Las distribuciones de probabilidad de variable continua son idealizaciones de las distribuciones estadísticas de variable continua. Estas se obtienen empíricamente (experimentando u observando). Aquellas son distribuciones teóricas.
+                Las distribuciones de probabilidad de variable continua se definen por medio de una función y = f(x) que se llama función de probabilidad o función de densidad. Ha de ser f(x)  0 para todo x.
+                Las probabilidades vienen dadas por el área bajo la curva. Por tanto, el área encerrada bajo la totalidad de la curva es 1. Es decir, tomamos como unidad el área bajo la curva completa.
+            </p>
+            <p>
+                3.2.2 Valor esperado: El valor esperado (o esperanza matemática) de una variable aleatoria continua 
+                X se define de manera similar al caso discreto, pero utilizando integrales en lugar de sumas. Para una variable aleatoria continua con función de densidad de probabilidad f(x), el valor esperado E[X] se calcula como:
+            </p>    
+                E[X] = &int;<sub>-&infin;</sub><sup>&infin;</sup> x &sdot; f(x) dx
+            <p>
+                3.2.3 Variancia, desviación estándar: Es una medida de dispersión, se representa con σ2 o V(X). La varianza de una variable aleatoria continua X con función de densidad de probabilidad f(x) y valor medio μ está dada por: 
+                <p>
+                    Varianza: σ<sup>2</sup> = V(X) = &int;<sub>-&infin;</sub><sup>&infin;</sup> (x - &mu;)<sup>2</sup> &sdot; f(x) dx 
+               <p>ó</p> 
+                <p>Varianza: σ<sup>2</sup> = V(x) = &int;<sub>-&infin;</sub><sup>&infin;</sup> x<sup>2</sup> &sdot; f(x) dx - &mu;<sup>2</sup></p>
+                <p>Desviación estándar: Es medida de dispersión representada por σ y es la raíz cuadrada de la varianza. <p>Desviación estándar: σ = √σ<sup>2</sup></p>
+            </p>
+            <p>3.2.4 Función acumulada: La función acumulada o función de distribución acumulada (CDF por sus siglas en inglés) para variables continuas se define como: <p>F(x) = P(X ≤ x)</p>
+            <p>donde X es una variable aleatoria continua y x es un valor específico. La función F(x) nos da la probabilidad de que la variable aleatoria  X sea menor o igual a x.</p>
+            <p>3.2.5 Cálculos de probabilidad: La función de densidad de probabilidad de una variable aleatoria continua es una fórmula que ayuda a calcular la probabilidad de que una variable aleatoria continua tenga un valor que esté dentro de un intervalo específico. Como todavía no se entiende mucho, veamos los detalles y los ejercicios resueltos.</p>
+            </p>
+            </p>
+             </p>    
+
+        
+        </li>
         
     </ul>
 </body>
