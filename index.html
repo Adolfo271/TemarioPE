@@ -47,8 +47,148 @@
             <p>
                 2.1 Técnicas de Conteo: Las técnicas de conteo son una serie de métodos de probabilidad para contar el número posible de arreglos dentro de un conjunto o varios conjuntos de objetos. Estas se usan cuando realizar las cuentas de forma manual se convierte en algo complicado debido a la gran cantidad de objetos y/o variables.
             </p> 
+            <p>
+                2.1.1 Principio aditivo: El principio aditivo es una técnica básica en combinatoria que permite contar el número total de opciones al sumar las distintas alternativas disponibles. Se aplica cuando tienes conjuntos de opciones exclusivas entre sí y simplemente sumas el número de opciones en cada conjunto para obtener el total combinado. 
+            </p>
+            <p>
+                2.1.2 Principio multiplicativo: El principio multiplicativo en combinatoria se usa cuando una tarea se divide en etapas sucesivas y cada etapa ofrece varias opciones. En lugar de sumar las opciones como en el principio aditivo, aquí se multiplican las opciones en cada etapa para determinar el total de combinaciones posibles.
+            </p>
+            <p>
+                2.1.3 Notación Factorial: La notación factorial, representada por un signo de exclamación (!), se usa en combinatoria para expresar el producto de todos los enteros positivos hasta un número dado. Por ejemplo, 5! se calcula como 5 × 4 × 3 × 2 × 1, que es igual a 120. Esta notación es esencial para determinar el número de permutaciones y combinaciones posibles de conjuntos de elementos.
+            </p>
+            <p>
+                2.1.4 Permutaciones: Las permutaciones son disposiciones ordenadas donde el orden de los elementos es crucial. En combinatoria, se emplean para contar las diferentes maneras en que se pueden ordenar elementos únicos. Por ejemplo, si tienes los elementos A, B y C, las permutaciones posibles son ABC, ACB, BAC, BCA, CAB y CBA.
+                La fórmula básica para calcular el número de permutaciones de \( n \) elementos distintos es \( P(n) = n! \), donde \( n! \) representa el factorial de \( n \).
+            </p>
+            <p>
+                2.1.5 Combinaciones: Las combinaciones son grupos donde el orden de los elementos no afecta, solo importa la selección en sí. En combinatoria, se usan para contar la cantidad de subconjuntos que pueden formarse a partir de un conjunto dado de elementos. Por ejemplo, si tienes los elementos A, B y C, las combinaciones posibles incluyen ABC, así como también ACB, BAC y BCA, entre otras.
 
+                La fórmula para calcular el número de combinaciones de n elementos tomados k a la vez se expresa como: <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Fórmula de Combinaciones</title>
+                </head>
+                <body>
+                    <p>La fórmula para calcular el número de combinaciones de <span style="font-style: italic;">n</span> elementos tomados de <span style="font-style: italic;">k</span> en <span style="font-style: italic;">k</span> es:</p>
+                    <p style="text-align: center;">C(n, k) = <sup>n</sup>C<sub>k</sub> = <span style="font-size: larger;">n</span>! / ( <span style="font-size: larger;">k</span>! * ( <span style="font-size: larger;">n</span> - <span style="font-size: larger;">k</span> )! )</p>
+                    <p>Esta fórmula asegura que no se cuenten las mismas selecciones más de una vez y considera todos los posibles subgrupos.</p>
+                </body>
+                </html>
+            </p>
+            <p>
+                2.1.6 Diagrama de Árbol: El diagrama de árbol es una representación gráfica útil en combinatoria y probabilidad. Se emplea para visualizar de manera estructurada las diferentes opciones y resultados que pueden surgir de una serie de decisiones o eventos sucesivos. Este método es particularmente eficaz cuando existen varias etapas o decisiones secuenciales que influyen en el resultado final
+                Por ejemplo, al lanzar dos monedas, un diagrama de árbol muestra de forma clara las ramificaciones para cada posible resultado en el primer lanzamiento, seguido de las ramas correspondientes a cada resultado posible en el segundo lanzamiento.
+                Es una herramienta efectiva para organizar y calcular el número total de resultados posibles en problemas complejos de conteo y probabilidad.
+            </p>
+            <p>
+                2.1.7 Teorema del Binomio: El Teorema del Binomio es un principio esencial en álgebra que describe cómo se expande una potencia de un binomio. En términos simples, permite calcular la suma de potencias de dos términos, como \( (a + b)^n \), donde \( a \) y \( b \) son números o variables, y \( n \) es un entero positivo.
+                <!DOCTYPE html>
+<html>
+<head>
+    <title>Teorema del Binomio</title>
+</head>
+<body>
+    <p>La fórmula general del Teorema del Binomio es:</p>
+    <p style="text-align: center;">(a + b)<sup>n</sup> = Σ<sub>k=0</sub><sup>n</sup> <span style="font-size: larger;">n</span>C<sub>k</sub> a<sup>n-k</sup> b<sup>k</sup></p>
+    <p>Aquí, <span style="font-size: larger;">n</span>C<sub>k</sub> representa el coeficiente binomial, calculado como <span style="font-size: larger;">n</span>C<sub>k</sub> = <span style="font-size: larger;">n</span>! / ( <span style="font-size: larger;">k</span>! * ( <span style="font-size: larger;">n</span> - <span style="font-size: larger;">k</span> )! ).</p>
+</body>
+</html>
 
+                Este teorema tiene aplicaciones fundamentales en matemáticas y se utiliza en áreas como la teoría de probabilidades, combinatoria y cálculo, entre otros campos.
+            </p>
+            <p>
+                2.2 Teoría elemental de probabilidad: La teoría básica de la probabilidad se centra en el estudio de eventos aleatorios y la evaluación numérica de su ocurrencia. Incluye conceptos como el conjunto total de posibles resultados (llamado espacio muestral), los eventos (que son subconjuntos del espacio muestral), y reglas para calcular probabilidades. Estas reglas incluyen cómo sumar probabilidades para eventos que no pueden ocurrir simultáneamente y cómo multiplicar probabilidades para eventos que son independientes entre sí. La teoría de la probabilidad es esencial para analizar y predecir resultados en una variedad de situaciones, desde juegos hasta aplicaciones científicas y financieras.
+            </p>
+            <p>
+                2.3 Probabilidad de Eventos
+            </p>
+            <p>
+                Definición de espacio muestral: Se entiende el grupo de todos los resultados especificos que se pueden obtener tras una experimentacion de caracter aleatorio. A cada uno de sus componentes se les define como puntos muestrales o simplemente muestras.
+            </p>
+            <p>
+                Definición de evento: En probabilidad, un evento es simplemente un resultado posible de un experimento aleatorio. Es cualquier resultado o combinación de resultados que pueda ocurrir cuando realizas el experimento. Por ejemplo, al lanzar un dado, obtener un número par o mayor que 4 son ejemplos de eventos posibles.
+            </p>
+            <p>
+                Simbologia: 
+                <ol>
+                    <li>A, B, C… = Conjuntos</li>
+                    <li>a, b, c… = Elementos de conjuntos</li>
+                    <li>U = Unión de conjuntos</li>
+                    <li>∩ = Intersección de conjuntos</li>
+                    <li>A' = Complemento de un conjunto</li>
+                    <li>/ = Dado que</li>
+                    <li>\ = Diferencia</li>
+                    <li>&lt;&gt; = Diferente de</li>
+                    <li>( ) = Conjunto nulo o vacío</li>
+                    <li>R = Conjunto de los números reales</li>
+                    <li>N = Conjunto de los números naturales</li>
+                    <li>C = Conjunto de los números complejos</li>
+                    <li>n! = Factorial de un número entero positivo</li>
+                    <li>Q = Conjunto de los números fraccionarios</li>
+                    <li>I = Conjunto de los números irracionales</li>
+                </ol>
+            </p>
+            <p>
+                Unión: 
+                La unión de dos conjuntos se define como la combinación de elementos de ambos conjuntos. El diagrama que se muestra a continuación ilustra esta situación descrita anteriormente.
+            </p>
+            <p>
+                Intersección: 
+                La intersección de dos conjuntos se define como la parte común que comparten ambos conjuntos, en caso de que exista. Por ejemplo, no existe intersección entre los números pares y los impares. El diagrama a continuación ilustra esta situación.
+            </p>
+            <p>
+                Diagramas de Venn: 
+                Los Diagramas de Venn se utilizan principalmente para representar conjuntos matemáticos mediante circunferencias. Estas figuras permiten a los estudiantes realizar operaciones como la unión, la intersección, entre otras. Podríamos decir que el manejo de los Diagramas de Venn sirve para guiar al estudiante, constituyendo una herramienta metodológica que los profesores utilizan para explicar la Teoría de Conjuntos.
+            </p>
+            <p>
+                2.4 Probabilidad con Técnicas de Conteo
+            </p>
+            <p>
+                Axiomas:Claro, aquí tienes un resumen más conciso de los axiomas fundamentales de la teoría de probabilidades:
+
+               <li> 1. No Negatividad: La probabilidad de cualquier evento es un número mayor o igual a cero: \( P(A) \geq 0 \).
+            </li>
+                <li>2. Unidad: La probabilidad del espacio muestral completo es uno: \( P(S) = 1 \).
+                </li>
+                <li>3. Aditividad: La probabilidad de la unión de eventos mutuamente excluyentes es la suma de sus probabilidades individuales: P(&#8746;<sub>i=1</sub><sup>&#8734;</sup> A<sub>i</sub>) = &#8721;<sub>i=1</sub><sup>&#8734;</sup> P(A<sub>i</sub>)
+                </li>
+                Estos axiomas forman la base para calcular probabilidades de eventos en la teoría probabilística, asegurando coherencia y consistencia en los resultados.
+            </p>
+            <p>
+                Teoremas: 
+                <p><strong>Teorema de la Probabilidad Total:</strong></p>
+<p>$$ P(A) = \sum_{i} P(A \cap B_i) = \sum_{i} P(A \mid B_i) P(B_i) $$</p>
+<p>Donde \( \{B_i\} \) es una partición del espacio muestral.</p>
+<p><strong>Teorema de Bayes:</strong></p>
+<p>$$ P(A \mid B) = \frac{P(B \mid A) P(A)}{P(B)} $$</p>
+<p>Donde \( P(B) \) es la probabilidad del evento \( B \).</p>
+<p><strong>Teorema de la Ley de los Grandes Números:</strong></p>
+<p>$$ \bar{X}_n \xrightarrow{\text{c.s.}} \mu \quad \text{o} \quad \bar{X}_n \xrightarrow{P} \mu $$</p>
+<p>Donde \( \bar{X}_n \) es la media de \( n \) observaciones, \( \mu \) es la esperanza de la variable aleatoria, y \( \xrightarrow{\text{c.s.}} \) y \( \xrightarrow{P} \) indican convergencia casi segura y convergencia en probabilidad, respectivamente.</p>
+
+            </p>
+            <p>
+                2.5 Probabilidad condicional
+            </p>
+            <p>
+                Dependiente: Dos eventos están relacionados si el resultado del primero influye en el resultado del segundo, lo que altera la probabilidad. Por ejemplo, si la primera canica no se reemplaza, el conjunto de posibles resultados para el segundo evento se modifica, estableciendo una dependencia entre los eventos. La probabilidad de que ambos eventos ocurran es el producto de las probabilidades individuales de cada uno: P(A y B) = P(A)*P(B)
+            </p>
+            <p>
+                Independientes: Dos eventos son independientes si el resultado del segundo evento no se ve influenciado por el resultado del primero. Si A y B son eventos independientes, entonces la probabilidad de que ambos ocurran es igual al producto de sus probabilidades individuales. P(A y B) = P(A) * P(B)
+            </p>
+            <p>
+                2.6 Ley multiplicativa: La regla de la multiplicacion permite encontrar la probabilidad de que ocurra el evento A y el evento B al mismo tiempo. Esta regla depende de si los eventos son dependientes o independientes.
+            </p>
+            <p>
+                2.7 Eventos independientes: </p>
+                <p>
+                Regla de Bayes: 
+
+En eventos independientes, la Regla de Bayes establece que la probabilidad de que ocurran dos eventos A y B simultáneamente es el producto de sus probabilidades individuales:
+P(A n B) = P(A) * P(B)
+Esto implica que la probabilidad condicional de A dado B, P(A∣B), en eventos independientes es simplemente la probabilidad de A, P(A), porque la ocurrencia de B no afecta la probabilidad de A.
+Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas más detalles, estoy aquí para ayudar.
+            </p>
 
             <h3>
                 3.-Variables Aleatorias.
@@ -100,7 +240,71 @@
             <p>3.2.5 Cálculos de probabilidad: La función de densidad de probabilidad de una variable aleatoria continua es una fórmula que ayuda a calcular la probabilidad de que una variable aleatoria continua tenga un valor que esté dentro de un intervalo específico. Como todavía no se entiende mucho, veamos los detalles y los ejercicios resueltos.</p>
             </p>
             </p>
-             </p>    
+            </p>   
+            <h3>
+                4.- Distribuciones de Probabilidad.
+            </h3> 
+            <P>4.1 Función de probabilidad: Esta funcion devuelve la pribabilidad de que una variable aleatoria discreta sea identico a un valor, esta funcion asocia a cada punto de un espacio muestral X la probabilidad de que esta lo asuma.</P>
+            <p>4.2 Distribución binomial: La distribucion binomial calcula las probabilidades de cualquier proceso binomial, el proceso binomial frecuentemente es llamado proceso de Bernoulli en honor a la primera persona que desarrolló plenamente sus propiedades, es cualquier caso en el que solo hay dos resultados posibles en cualquier ensayo, llamados éxitos y fracasos. Recibe su nombre del sistema numérico binario, en el que todos los números se reducen a 1 o 0.</p>
+            <p>4.3 Distribución hipergeométrica: Es una distribución discreta asociada con muestras aleatorias sin reposición. Supóngase que se tiene una población de N elementos de los cuales, d pertenecen a la categoría A y N-d a la B. La distribución hipergeométrica mide la probabilidad de obtener x (0 <= x <= d) elementos de la categoría A en una muestra den elementos de la población original.</p>
+            <p>4.4 Distribución de Poisson: La distribucion de Poisson se utiliza para determinar cuántos empleados de caja son necesarios para mantener el tiempo de espera en la fila a niveles especificados, cuántas líneas telefónicas son necesarias para evitar que el sistema se sobrecargue, y muchas otras aplicaciones prácticas.</p>
+            <p>4.5 Distribución normal: Es un patron estadistico que aparece cuando un conjunto de datos se distribuye de manera uniforme alrededor de un valor central, esto es, que la mayoria de las observaciones se agrupan en torno al promedio, y los valores se vuelven progresivamente menos comunes a medida que se alejan de este punto medio.</p>
+            <p>4.6 Distribución T-student: esta distribucion surge del problema de estimar la media de una poblacion normalmente distribuida cuando el tamaño de la muestra es pequeño y la desviacion estandar poblacional es desconocida, la distribucion t de Student es la distribucion de probabilidad del cociente: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                  <mi>Z</mi>
+                  <msqrt>
+                    <mfrac>
+                      <mi>V</mi>
+                      <mi>v</mi>
+                    </mfrac>
+                  </msqrt>
+                </mfrac>
+              </math>
+              </p>
+              <p>donde z tiene distribucion normal de media nula y varianza 1, V tiene una distribucion ji-cuadrado con v grados de libertad, Z y V son independiantes.</p>
+              <p>4.7 Distribución Chi cuadrada: es una distribucion de probabilidad continua con un parametro k que representa los grados de libertad de la variable aleatoria: <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                  <mi>X</mi>
+                  <mo>=</mo>
+                  <msubsup>
+                    <mi>Z</mi>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>+</mo>
+                  <msubsup>
+                    <mi>Z</mi>
+                    <mn>2</mn>
+                    <mn>2</mn>
+                  </msubsup>
+                  <mo>+</mo>
+                  <mo>&#x22EF;</mo>
+                  <mo>+</mo>
+                  <msubsup>
+                    <mi>Z</mi>
+                    <mi>k</mi>
+                    <mn>2</mn>
+                  </msubsup>
+                </mrow>
+              </math></p>
+            <p>donde <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <msub>
+                  <mi>Z</mi>
+                  <mi>i</mi>
+                </msub>
+              </math>
+              son variables aleatorias normales independiantes de media cero y varianza 1.</p>
+            <p>4.8 Distribución F: esta distribucion es la que se usa para compara las varianzas de dos poblaciones distintas o independiantes y cada una de las cuales sigue una distribucion normal.</p>  
+            <p> Datos sobre la distribucion F:  </p>
+            <ul>
+                <li>La curva no es simétrica, sino que está distorsionada hacia la derecha.</li>
+                <li>Hay una curva diferente para cada conjunto de df.</li>
+                <li>El estadístico F es mayor o igual a cero.</li>
+                <li>A medida que aumentan los grados de libertad del numerador y del denominador, la curva se normaliza.</li>
+                <li>Otros usos de la distribución F incluyen la comparación de dos varianzas y el análisis de varianza bidireccional. El análisis bidireccional queda fuera del alcance de este capítulo.</li>
+              </ul>
+              
+
 
         
         </li>
