@@ -31,21 +31,23 @@
             <h3>1.- Estadística descriptiva.</h3>
             <p>1.1 Conceptos básicos de estadística: 
             </p>
-            <p>
-                Teoría de decisión:
-                <p>Componentes</p>
-    <ul>
-        <li><strong>Decisiones</strong>: Opciones disponibles.</li>
-        <li><strong>Estados de la naturaleza</strong>: Situaciones posibles.</li>
-        <li><strong>Consecuencias</strong>: Resultados de cada decisión.</li>
-        <li><strong>Funciones de pérdida o utilidad</strong>: Valores que representan ganancia o pérdida.</li>
-    </ul>
-    <p>Tipos de problemas</p>
-    <ul>
-        <li><strong>Certeza</strong>: Estado conocido.</li>
-        <li><strong>Riesgo</strong>: Probabilidades conocidas.</li>
-        <li><strong>Incertidumbre</strong>: Probabilidades desconocidas.</li>
-    </ul>
+            <title>Teoría de decisión</title>
+        </head>
+        <body>
+            <h4>Componentes</h4>
+            <ul>
+                <li>Decisiones: Opciones disponibles.</li>
+                <li>Estados de la naturaleza: Situaciones posibles.</li>
+                <li>Consecuencias: Resultados de cada decisión.</li>
+                <li>Funciones de pérdida o utilidad: Valores que representan ganancia o pérdida.</li>
+            </ul>
+        
+            <h4>Tipos de problemas</h4>
+            <ul>
+                <li>Certeza: Estado conocido.</li>
+                <li>Riesgo: Probabilidades conocidas.</li>
+                <li>Incertidumbre: Probabilidades desconocidas.</li>
+            </ul>
   
             <p>Población: En estadística, se refiere al conjunto total de elementos (individuos, objetos, eventos) que se investigan. Los parámetros poblacionales son valores numéricos que describen características de dicha población, como la media o la varianza. Un censo recoge datos de todos los miembros de la población, mientras que una muestra es un subconjunto representativo que se utiliza para hacer inferencias sobre toda la población. Las poblaciones pueden ser finitas (con un número limitado de elementos) o infinitas (con un número ilimitado de elementos). Comprender la población es crucial para definir el alcance del estudio y realizar inferencias precisas.</p>
             <p>Muestra aleatoria: es un grupo de individuos seleccionados de una población de manera que cada uno tenga la misma posibilidad de ser escogido, asegurando así su representatividad. Existen varios tipos de muestra aleatoria, como la selección equitativa de todos los miembros (simple), la división en subgrupos para seleccionar dentro de cada uno (estratificada), la selección de cada k-ésimo individuo (sistemática), y la selección de grupos enteros (por conglomerados). Estas muestras minimizan el sesgo en la selección y facilitan hacer inferencias precisas sobre la población, aunque su implementación puede presentar desafíos logísticos y económicos.</p>
@@ -288,7 +290,7 @@ Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas 
                 4.- Distribuciones de Probabilidad.
             </h3> 
             <P>4.1 Función de probabilidad: Esta funcion devuelve la pribabilidad de que una variable aleatoria discreta sea identico a un valor, esta funcion asocia a cada punto de un espacio muestral X la probabilidad de que esta lo asuma.</P>
-            <p>4.2 Distribución binomial: La distribucion binomial calcula las probabilidades de cualquier proceso binomial, el proceso binomial frecuentemente es llamado proceso de Bernoulli en honor a la primera persona que desarrolló plenamente sus propiedades, es cualquier caso en el que solo hay dos resultados posibles en cualquier ensayo, llamados éxitos y fracasos. Recibe su nombre del sistema numérico binario, en el que todos los números se reducen a 1 o 0.</p>
+            <p>4.2 Distribución binomial: La distribucion binomial calcula las probabilidades de cualquier proceso binomial, el proceso binomial frecuentemente es llamado proceso de Bernoulli en honor a la primera persona que desarrolló Una característica fundamental es su naturaleza dual, con solo dos posibles resultados en cada intento, denominados triunfos y fallos. Este término deriva de la representación numérica binaria, donde todos los números se simplifican a 1 o 0</p>
             <p>4.3 Distribución hipergeométrica: Es una distribución discreta asociada con muestras aleatorias sin reposición. Supóngase que se tiene una población de N elementos de los cuales, d pertenecen a la categoría A y N-d a la B. La distribución hipergeométrica mide la probabilidad de obtener x (0 <= x <= d) elementos de la categoría A en una muestra den elementos de la población original.</p>
             <p>4.4 Distribución de Poisson: La distribucion de Poisson se utiliza para determinar cuántos empleados de caja son necesarios para mantener el tiempo de espera en la fila a niveles especificados, cuántas líneas telefónicas son necesarias para evitar que el sistema se sobrecargue, y muchas otras aplicaciones prácticas.</p>
             <p>4.5 Distribución normal: Es un patron estadistico que aparece cuando un conjunto de datos se distribuye de manera uniforme alrededor de un valor central, esto es, que la mayoria de las observaciones se agrupan en torno al promedio, y los valores se vuelven progresivamente menos comunes a medida que se alejan de este punto medio.</p>
@@ -347,10 +349,31 @@ Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas 
                 <li>Otros usos de la distribución F incluyen la comparación de dos varianzas y el análisis de varianza bidireccional. El análisis bidireccional queda fuera del alcance de este capítulo.</li>
               </ul>
               
+    <h3>5- Regresión lineal</h3>
+    <p>5.1 Regresión y correlación </p>
 
-
-        
-        </li>
+    <p>Regresion: Se utiliza para analizar cómo una variable dependiente cambia en respuesta a cambios en una o más variables independientes. Facilita la predicción de valores de la variable dependiente en función de los valores de las variables independientes.</p>
+    <p>Corelacion:  Es un método estadístico que evalúa la relación entre dos variables. Puede ser positiva, negativa o nula, y su valor varía entre -1 y 1.</p>
+  
+    <p>5.1.1 Diagrama de dispersión: El diagrama de dispersión es una herramienta visual que representa la relación entre dos variables mediante puntos en un plano. Se utiliza para observar la presencia y la naturaleza de una posible relación entre las variables, ya sea positiva, negativa o inexistente.</p>    
+   
+    <p>5.1.2 Regresión lineal simple: La regresión lineal simple es una técnica estadística que permite modelar la relación entre una variable que se quiere predecir y una única variable predictora utilizando una línea recta.</p>  
+   
+    <p>5.1.3 Correlación: La correlación es una medida estadística que nos ayuda a entender cómo se relacionan dos variables entre sí. Al calcular la correlación entre dos variables, intentamos establecer si existe una relación entre ellas y en qué grado se manifiesta esa relación. Esta relación puede ser positiva, negativa o no existir en absoluto.</p>
+   
+    <p>5.1.4 Determinación y análisis de los coeficientes de correlación y de determinación</p>
+    <p>Coeficiente de correlación: Es una métrica que muestra la intensidad y la orientación de la relación entre dos variables. Puede ser positivo (las variables aumentan juntas), negativo (las variables varían en direcciones opuestas) o nulo (sin relación lineal aparente). Se calcula utilizando métodos como el coeficiente de correlación de Pearson, y su valor varía entre -1 y 1.</p>
+    <p>Coeficiente de determinación (R cuadrado): Es una medida que indica la proporción de la variabilidad de la variable dependiente que es explicada por el modelo de regresión. Un valor de R cuadrado cercano a 1 sugiere que el modelo ajusta bien los datos, mientras que un valor cercano a 0 indica que el modelo no explica bien la variabilidad de los datos.</p>
+   
+    <p>5.1.5 Distribución normal bidimensional: La distribución normal bidimensional describe cómo se distribuyen conjuntamente dos variables aleatorias continuas. Al igual que la distribución normal unidimensional, presenta una forma en dos dimensiones que se asemeja a una campana. Se define por su media y una matriz que describe cómo varían y se relacionan las dos variables. Esta distribución es esencial en estadística para entender las interacciones entre variables y para realizar análisis avanzados como la regresión múltiple y la exploración de correlaciones entre múltiples variables.
+    </p>
+   
+    <p>5.1.6 Intervalos de confianza y pruebas para el coeficiente de correlación</p>
+    <p>Intervalos de confianza: Son rangos estadísticos que estiman dónde puede encontrarse el verdadero valor del coeficiente de correlación en toda la población. Estos intervalos indican cuán confiable es la estimación del coeficiente obtenida a partir de una muestra de datos.</p>
+    <p>Pruebas: Son procedimientos estadísticos que ayudan a determinar si existen pruebas suficientes para rechazar una afirmación acerca del coeficiente de correlación en la población. Se utilizan comúnmente para investigar si el coeficiente de correlación es significativamente distinto de cero, lo cual indicaría una relación entre las variables.</p>
+    
+    <p>5.1.7 Errores de medición: Son las diferencias entre el valor real de una cantidad y su medida obtenida. Pueden ser sistemáticos, consistentes en una dirección particular, o aleatorios, fluctuaciones impredecibles. Los errores sistemáticos pueden originarse por problemas con los instrumentos, técnicas de medición incorrectas o condiciones experimentales no controladas adecuadamente. Los errores aleatorios, en cambio, pueden surgir de variaciones temporales, errores humanos no previsibles o limitaciones inherentes a la precisión de los instrumentos. Entender y manejar estos errores es crucial en la investigación y en la toma de decisiones donde la exactitud de las mediciones juega un papel fundamental.</p>
+</li>
         
     </ul>
 </body>
