@@ -18,14 +18,12 @@
 <body>
     <div class="justificado">
        
- 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temario</title>
 </head>
 <body>
-    <h1>Probabilidad y Estadística</h1>
+    <h1>Probabilidad y estadística</h1>
     <ul>
         
         
@@ -81,7 +79,7 @@
                 <li><a href="#descriptiva">1.- Estadística descriptiva</a></li>
                 <li><a href="Tablasdefrecuencias.html">Ejercicios en equipo</a></li>
                 <li><a href="#probabilidad">2.- Fundamentos de la Teoría de Probabilidad</a></li>
-                <li><a href="index2.html">Ejercicios</a></li>
+                <li><a href="E2.html">Ejercicios</a></li>
                 <li><a href="#aleatorias">3.- Variables Aleatorias</a></li>
                 <li><a href="#distribuciones">4.- Distribuciones de Probabilidad</a></li>
                 <li><a href="#regresion">5.- Regresión lineal</a></li>
@@ -227,9 +225,22 @@
                     <title>Fórmula de Combinaciones</title>
                 </head>
                 <body>
-                    <p>La fórmula para calcular el número de combinaciones de <span style="font-style: italic;">n</span> elementos tomados de <span style="font-style: italic;">k</span> en <span style="font-style: italic;">k</span> es:</p>
-                    <p style="text-align: center;">C(n, k) = <sup>n</sup>C<sub>k</sub> = <span style="font-size: larger;">n</span>! / ( <span style="font-size: larger;">k</span>! * ( <span style="font-size: larger;">n</span> - <span style="font-size: larger;">k</span> )! )</p>
-                    <p>Esta fórmula asegura que no se cuenten las mismas selecciones más de una vez y considera todos los posibles subgrupos.</p>
+                    <!DOCTYPE html>
+                    <html lang="es">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Combinaciones</title>
+                        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+                        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+                    </head>
+                    <body>
+                        <p>La fórmula para calcular el número de combinaciones de <span style="font-style: italic;">n</span> elementos tomados de <span style="font-style: italic;">k</span> en <span style="font-style: italic;">k</span> es:</p>
+                        <p style="text-align: center;">$$ C(n, k) = \binom{n}{k} = \frac{n!}{k!(n-k)!} $$</p>
+                        <p>Esta fórmula asegura que no se cuenten las mismas selecciones más de una vez y considera todos los posibles subgrupos.</p>
+                    </body>
+                    </html>
+                    
                 </body>
                 </html>
             </p>
@@ -246,9 +257,22 @@
     <title>Teorema del Binomio</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorema del Binomio</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
     <p>La fórmula general del Teorema del Binomio es:</p>
-    <p style="text-align: center;">(a + b)<sup>n</sup> = Σ<sub>k=0</sub><sup>n</sup> <span style="font-size: larger;">n</span>C<sub>k</sub> a<sup>n-k</sup> b<sup>k</sup></p>
-    <p>Aquí, <span style="font-size: larger;">n</span>C<sub>k</sub> representa el coeficiente binomial, calculado como <span style="font-size: larger;">n</span>C<sub>k</sub> = <span style="font-size: larger;">n</span>! / ( <span style="font-size: larger;">k</span>! * ( <span style="font-size: larger;">n</span> - <span style="font-size: larger;">k</span> )! ).</p>
+    <p style="text-align: center;">$$ (a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k $$</p>
+    <p>Aquí, \( \binom{n}{k} \) representa el coeficiente binomial, calculado como \( \binom{n}{k} = \frac{n!}{k!(n-k)!} \).</p>
+</body>
+</html>
+
 </body>
 </html>
 
@@ -313,17 +337,31 @@
                 Estos axiomas forman la base para calcular probabilidades de eventos en la teoría probabilística, asegurando coherencia y consistencia en los resultados.
             </p>
             <p>
-                Teoremas: 
-                <p><strong>Teorema de la Probabilidad Total:</strong></p>
-<p>$$ P(A) = \sum_{i} P(A \cap B_i) = \sum_{i} P(A \mid B_i) P(B_i) $$</p>
-<p>Donde \( \{B_i\} \) es una partición del espacio muestral.</p>
-<p><strong>Teorema de Bayes:</strong></p>
-<p>$$ P(A \mid B) = \frac{P(B \mid A) P(A)}{P(B)} $$</p>
-<p>Donde \( P(B) \) es la probabilidad del evento \( B \).</p>
-<p><strong>Teorema de la Ley de los Grandes Números:</strong></p>
-<p>$$ \bar{X}_n \xrightarrow{\text{c.s.}} \mu \quad \text{o} \quad \bar{X}_n \xrightarrow{P} \mu $$</p>
-<p>Donde \( \bar{X}_n \) es la media de \( n \) observaciones, \( \mu \) es la esperanza de la variable aleatoria, y \( \xrightarrow{\text{c.s.}} \) y \( \xrightarrow{P} \) indican convergencia casi segura y convergencia en probabilidad, respectivamente.</p>
-
+               
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Teoremas de Probabilidad</title>
+                    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+                    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+                </head>
+                <body>
+                    <p><strong>Teorema de la Probabilidad Total:</strong></p>
+                    <p>$$ P(A) = \sum_{i} P(A \cap B_i) = \sum_{i} P(A \mid B_i) P(B_i) $$</p>
+                    <p>Donde \( \{B_i\} \) es una partición del espacio muestral.</p>
+                    
+                    <p><strong>Teorema de Bayes:</strong></p>
+                    <p>$$ P(A \mid B) = \frac{P(B \mid A) P(A)}{P(B)} $$</p>
+                    <p>Donde \( P(B) \) es la probabilidad del evento \( B \).</p>
+                    
+                    <p><strong>Teorema de la Ley de los Grandes Números:</strong></p>
+                    <p>$$ \bar{X}_n \xrightarrow{\text{c.s.}} \mu \quad \text{o} \quad \bar{X}_n \xrightarrow{P} \mu $$</p>
+                    <p>Donde \( \bar{X}_n \) es la media de \( n \) observaciones, \( \mu \) es la esperanza de la variable aleatoria, y \( \xrightarrow{\text{c.s.}} \) y \( \xrightarrow{P} \) indican convergencia casi segura y convergencia en probabilidad, respectivamente.</p>
+                </body>
+                </html>
+                
             </p>
             <p>
                 2.5 Probabilidad condicional
@@ -358,7 +396,8 @@ Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas 
             </P> 
 
             
-            <li><a href="variables-aleatorias-discretas_spAUxgIi.mp4">Video variables aleatorias discretas</a></li>
+            
+            <a href="https://drive.google.com/file/d/1RGSgBrPrIclua8O5OWZo0Lq0XRJBHCce/view?usp=share_link">Variables aleatorias discretas</a>
 
             <p>
                 3.1.1 Distribución de probabilidad en forma
@@ -380,8 +419,8 @@ Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas 
                 3.2 Variables aleatorias continuas: Se dice que una variable aleatoria X es continua si su conjunto de posibles valores es todo un intervalo (finito o infinito) de números reales.
             </p>
 
-            
-            <li><a href="variables-aleatorias-continuas_rRkPCBf2.mp4">Video variables aleatorias continuas</a></li>
+         
+            <a href="https://drive.google.com/file/d/1T27gva4ewoIDruc4VzY6JQZEEpsujVgl/view?usp=share_link">Variables aleatorias continuas</a>
 
             <p>
                 3.2.1 Distribución de probabilidad en forma general:
@@ -417,7 +456,9 @@ Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas 
     <p>A continuación se muestra una imagen:</p>
     <img src="Unknown.png" alt="Descripción de la imagen" width="500" height="300">
  
-<li><a href="distribucion-binomial_QKQHge4S.mp4">Video-Ejercicio distribucion binomial</a></li>
+
+
+<a href="https://drive.google.com/file/d/1vwXyPQ3OmePz8Kdy9hD1EsqhW--EZBy_/view?usp=share_link">Video Distribucion binomial</a>
 
             
             <p>4.3 Distribución hipergeométrica: Es una distribución discreta asociada con muestras aleatorias sin reposición. Supóngase que se tiene una población de N elementos de los cuales, d pertenecen a la categoría A y N-d a la B. La distribución hipergeométrica mide la probabilidad de obtener x (0 <= x <= d) elementos de la categoría A en una muestra den elementos de la población original.</p>
@@ -514,8 +555,7 @@ Espero que este resumen sea útil y claro. Si tienes más preguntas o necesitas 
     
             <p>5.1.7 Errores de medición: Son las diferencias entre el valor real de una cantidad y su medida obtenida. Pueden ser sistemáticos, consistentes en una dirección particular, o aleatorios, fluctuaciones impredecibles. Los errores sistemáticos pueden originarse por problemas con los instrumentos, técnicas de medición incorrectas o condiciones experimentales no controladas adecuadamente. Los errores aleatorios, en cambio, pueden surgir de variaciones temporales, errores humanos no previsibles o limitaciones inherentes a la precisión de los instrumentos. Entender y manejar estos errores es crucial en la investigación y en la toma de decisiones donde la exactitud de las mediciones juega un papel fundamental.</p>
 
-
-</li>
+ </li>
         
 <style>
     body {
